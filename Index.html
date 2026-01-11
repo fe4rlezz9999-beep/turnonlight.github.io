@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light ON and Light Off</title>
+  </head>
+  <body>
+    <center>
+      <img src="on.gif" id="lamp" width="200" />
+      <br /><br />
+      <button onclick="TurnOn()">Turn on</button>
+      <button onclick="TurnOff()">Turn off</button>
+
+      <script>
+        let lamp = document.getElementById("lamp");
+        function TurnOn() {
+          lamp.src = "on.gif";
+        }
+        function TurnOff() {
+          lamp.src = "off.gif";
+        }
+      </script>
+    </center>
+  </body>
+</html>
